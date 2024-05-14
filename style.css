@@ -1,35 +1,33 @@
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
+.form {
+    border: 3px solid #f1f1f1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0,0,0,0.24);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {   
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
     cursor: pointer;
-    transition: 0.3s;
-    animation: animateButton 500ms linear infinite alternate;
+    width: 100%;
 }
 
-@keyframes animateButton {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+button:hover {
+    opacity: 0.8;
 }
-
-.button:hover {
-    background-color: #45a049;
-}
-
-.button.active, .button:active {
-    transform: scale(1.1);
-}
-
